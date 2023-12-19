@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Secular One', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #b5c2ca;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 2.5rem;
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    'menu navbar'
+    'menu content';
+  grid-template-rows: 1fr 10fr;
+  grid-template-columns: auto 5fr;
+  height: 100vh;
+
+  @media screen and (max-width: 700px) {
+    grid-template-areas:
+      'navbar'
+      'content';
+    grid-template-rows: 1fr 10fr;
+    grid-template-columns: 1fr;
+  }
+}
+
+.content {
+  grid-area: content;
+  padding: 10px;
+  overflow: auto;
+  background: #ffffff;
+}
+
+.navbar {
+  grid-area: navbar;
+  padding: 10px;
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 10px;
+  border-bottom: rgba(0, 0, 0, 0.05) solid 1px;
+
+  @media screen and (max-width: 700px) {
+    grid-template-columns: auto 4fr auto;
+    gap: 0px;
+  }
+}
+
+.menu {
+  grid-area: menu;
+  background-color: #1f263e;
+  color: #ffffff;
+  display: grid;
+  border-right: rgba(0, 0, 0, 0.05) solid 1px;
+  grid-template-rows: 1fr 10fr;
+
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
+}
