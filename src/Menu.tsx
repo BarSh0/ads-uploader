@@ -1,6 +1,6 @@
-import DashboardIcon from '@mui/icons-material/Dashboard';
+// import DashboardIcon from '@mui/icons-material/Dashboard';
 import SettingsIcon from '@mui/icons-material/Settings';
-import ViewKanbanIcon from '@mui/icons-material/ViewKanban';
+// import ViewKanbanIcon from '@mui/icons-material/ViewKanban';
 import LogoutIcon from '@mui/icons-material/Logout';
 import { List, ListItemButton, ListItemIcon, ListItemText, Stack, styled } from '@mui/material';
 import { useState } from 'react';

@@ -1,14 +1,14 @@
 import { Route, Routes } from 'react-router';
 import ProtectedRoute from './auth/ProtectedRoute';
-import { AutomationsProvider } from './contexts/AutomationsContext';
+// import { AutomationsProvider } from './contexts/AutomationsContext';
 import {
-  AdminPage,
-  AutomationsPage,
-  ConnectionsPage,
+  // AdminPage,
+  // AutomationsPage,
+  // ConnectionsPage,
   LoginPage,
   SettingsPage,
   SignUpPage,
-  UserProfilePage,
+  // UserProfilePage,
 } from './pages';
 import Menu from './Menu';
 import Navbar from './Navbar';
