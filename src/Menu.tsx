@@ -46,7 +46,7 @@ const Menu = () => {
             selected={selectedIndex === 2}
             onClick={(event) => handleListItemClick(event, 2)}
             component={Link}
-            to="/buisnesses"
+            to="/"
             sx={{
               borderRadius: '1rem',
             }}
